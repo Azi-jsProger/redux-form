@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.checkbox-in {
+    display: none;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.custom-checkbox {
+    width: 18px;
+    height: 18px;
+    background-color: #224957;
+    border-radius: 4px;
+    position: relative;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.checkbox-in:checked + .checkbox-label .custom-checkbox {
+    background-color: #20DF7F;
+}
+
+.custom-checkbox::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.checkbox-in:checked + .checkbox-label .custom-checkbox::after {
+    opacity: 1;
+}
+
+.form {
+    color: #fff;
+    width: 348px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+}
+
+.h2 h1 {
+    font-size: 64px;
+    padding-bottom: 39px;
+}
+
+.h2 h4 {
+    font-size: 16px;
+}
+
+.input-form {
+    width: 300px;
+    height: 45px;
+    background-color: #224957;
+    border: none;
+    border-radius: 10px;
+    padding: 18px;
+    font-size: 14px;
+    color: #fff;
+    transition: 0.2s ease-in-out ;
+}
+
+.input-form:hover {
+    background-color: rgba(34, 73, 87, 0.28);
+}
+
+.check {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.checked {
+    display: flex;
+    flex-direction: row;
+}
+
+.checked h5 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.checkbox-in {
+    background-color: #224957;
+    width: 18px;
+    height: 17px;
+    border: none;
+}
+
+.check a {
+    text-decoration: none;
+    color: #20DF7F;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+
+.check h5, a {
+    font-family: Montserrat;
+}
+
+.check a:hover {
+    color: #20DF7F60;
+}
+
+.form-but {
+    background-color: #20DF7F;
+    padding: 0;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.2s ease-in-out;
+    color: #fff;
+}
+
+.form-but:hover {
+    background-color: #20DF7F60;
+}

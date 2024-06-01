@@ -1,0 +1,40 @@
+.Main {
+    width: 100%;
+    height: 100vh;
+    background-color: #093545;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.image-container {
+    margin-top: 46px;
+    position: relative;
+}
+
+.vectors {
+    position: relative;
+}
+
+.img-vector {
+    width: 100%;
+    height: auto;
+}
+
+.vectorTwo {
+    position: absolute;
+}
+
+.theme {
+    width: 70px;
+    height: 70px;
+    margin: 36px;
+    position: absolute;
+    top: 6%;
+    left: 0;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
